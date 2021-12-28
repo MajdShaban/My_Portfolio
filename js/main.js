@@ -85,42 +85,42 @@ let portfolioItems = [
 let PortfolioProjects = [
   {
     id: 1,
-    image: "../images/portfolio-img1.jpg",
+    image: "./images/portfolio-img1.jpg",
     type: "React&Bootsrap",
   },
   {
     id: 2,
-    image: "../images/portfolio-img2.jpg",
+    image: "./images/portfolio-img2.jpg",
     type: "React&Redux",
   },
   {
     id: 3,
-    image: "../images/portfolio-img3.jpg",
+    image: "./images/portfolio-img3.jpg",
     type: "React&Redux",
   },
   {
     id: 4,
-    image: "../images/portfolio-img4.jpg",
+    image: "./images/portfolio-img4.jpg",
     type: "HTML&CSS",
   },
   {
     id: 5,
-    image: "../images/portfolio-img5.jpg",
+    image: "./images/portfolio-img5.jpg",
     type: "React&Bootsrap",
   },
   {
     id: 6,
-    image: "../images/portfolio-img6.jpg",
+    image: "./images/portfolio-img6.jpg",
     type: "HTML&CSS",
   },
   {
     id: 7,
-    image: "../images/portfolio-img7.jpg",
+    image: "./images/portfolio-img7.jpg",
     type: "React&Bootsrap",
   },
   {
     id: 8,
-    image: "../images/portfolio-img8.jpg",
+    image: "./images/portfolio-img8.jpg",
     type: "Javascript",
   },
 ];
