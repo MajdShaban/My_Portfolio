@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== Main Css File ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ==== RENDER ALL ELEMENTS NORMALLY ==== -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- ==== BOX ICONS ==== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- ====== Header Section ====== -->
+    <header class="headerSection" id="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"> Majd</a>
+          </div>
+          <ul class="navbar-list" id="navbar_list">
+            <li class="navbar-listItem"><a href="#home">Home</a></li>
+            <li class="navbar-listItem"><a href="#about">About</a></li>
+            <li class="navbar-listItem"><a href="#skills">Skills</a></li>
+            <li class="navbar-listItem"><a href="#portfolio">Portfolio</a></li>
+            <li class="navbar-listItem"><a href="#contact">Contact</a></li>
+            <div><i class="bx bxs-phone"></i>+963 936269876</div>
+          </ul>
+          <div class="header-icons">
+            <i class="bx bxs-moon" id="dark-mode-toggle"></i>
+            <div class="icon" id="listIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====== Home Section ====== -->
+    <section class="home section" id="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-desc">
+            <h3>Hello,I'm</h3>
+            <h1>
+              Majd<br />
+              Shaban
+            </h1>
+            <h2>Front End Developer</h2>
+
+            <ul class="home-social" id="homeSocial">
+              <li class="">
+                <span><i class="bx bxl-github"></i></span>
+                <span>Github</span>
+              </li>
+              <li>
+                <span><i class="bx bxl-linkedin-square"></i></span>
+                <span>Linkedin</span>
+              </li>
+              <li>
+                <span><i class="bx bxs-user-rectangle"></i></span>
+                <span>My_CV</span>
+              </li>
+            </ul>
+          </div>
+          <div class="home-img">
+            <img src="images/myImg.png" alt="profile" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== About Section ====== -->
+
+    <section class="about-section" id="about">
+      <h2 class="section-title">&lt; About Me /></h2>
+      <div class="container">
+        <div class="about-content">
+          <div class="about-desc">
+            <p></p>
+              I work in front-end web development, and I have experience in
+              dealing with programming and modern web technologies, and I have
+              built a lot of projects that have increased my experience and
+              trained a lot, I am a fast learner and always love to develop
+              myself.
+            </p>
+          </div>
+          <div class="about-info"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Skills Section ====== -->
+
+    <section class="skills section" id="skills">
+      <h2 class="section-title">&lt;My Skills /></h2>
+      <div class="container">
+        <div class="skills-content"></div>
+      </div>
+    </section>
+
+    <!-- ====== Portfolio Section ====== -->
+
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section-title">&lt; projects /></h2>
+      <div class="container">
+        <div class="portfolio-content"></div>
+      </div>
+    </section>
+
+    <!-- ====== Contact Section ====== -->
+
+    <section class="contact section" id="contact">
+      <h2 class="section-title">&lt; Contact Me /></h2>
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-form">
+            <form method="POST">
+              <h2>Just say Hello</h2>
+              <div class="form-field">
+                <input type="text" id="name" name="name" placeholder="Your Name"/>
+              </div>
+              <div class="form-field">
+                <input type="email" id="email" name="email" placeholder="Your Email"/>
+              </div>
+              <div class="form-field">
+                <input type="text" id="subject" name="subject" placeholder="Your Subject"/>
+              </div>
+              <div class="form-field">
+                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required="" style="margin-top: 0px; margin-bottom: 0px; height: 186px;"></textarea>              </div>
+                <button class="submit-btn" type="submit" id="submit" name="submit">Send message</button>
+            </form>
+            <div class="contact-info">
+              <h2 class="contact-info-title">Contact Info</h2>
+              <ul class="contact-info-list">
+                <li class="contact-info-list-item">
+                  <div class="contact-info-list-item-icon">
+                    <i class="bx bxs-phone"></i>
+                  </div>
+                  <div class="contact-info-list-item-info">
+                    <h3>Phone</h3>
+                    <p>+963-936269876</p>
+                  </div>
+                </li>
+                <li class="contact-info-list-item">
+                  <div class="contact-info-list-item-icon">
+                    <i class="bx bx-mail-send"></i>
+                  </div>
+                  <div class="contact-info-list-item-info">
+                    <h3 >Email</h3>
+                    <p>majdshaban@hotmail.com</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="home-social contact-social" id="contactSocial">
+                <li>
+                  <span><i class="bx bxl-github"></i></span>
+                  <span>Github</span>
+                </li>
+                <li>
+                  <span><i class="bx bxl-linkedin-square"></i></span>
+                  <span>Linkedin</span>
+                </li>
+                <li>
+                  <span><i class="bx bxs-user-rectangle"></i></span>
+                  <span>My_CV</span>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Footer Section ====== -->
+    <footer>
+        <p>© 2021 copyright all right reserved</p>
+    </footer>
+
+    <!-- ==== SCRIPTS ==== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
