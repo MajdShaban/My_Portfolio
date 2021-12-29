@@ -2,9 +2,12 @@
 
 :root {
   /* Colors */
+  /* --first-color: #e71d36; */
+  --second-color: #000411;
+  --light-color: #e1efe6;
   --first-color: #ffbf00;
-  --second-color: #051e34;
-  --light-color: #f6f7f9;
+  /*--second-color: #051e34;
+  --light-color: #f6f7f9; */
   /* Font size */
   --big-font-size: 3rem;
   --h2-font-size: 2rem;
@@ -40,6 +43,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  /* margin-top: 3rem !important; */
 }
 
 .container {
@@ -224,12 +228,18 @@ header .logo:hover::after {
 
 @media (max-width: 992px) {
   .navbar .navbar-list .navbar-listItem a {
-    color: #051e34;
+    color: #000411;
   }
 }
 
 .navbar .navbar-list .navbar-listItem a:hover {
-  color: #051e34bf;
+  color: var(--first-color);
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-list .navbar-listItem a:hover {
+    color: #051e34bf;
+  }
 }
 
 .navbar .navbar-list .navbar-listItem:last-child {
@@ -293,7 +303,7 @@ header .logo:hover::after {
 }
 
 .home-desc h1 {
-  font-size: 95px;
+  font-size: 100px;
   font-weight: 900;
   margin: 0;
 }
@@ -321,11 +331,8 @@ header .logo:hover::after {
   height: 55px;
   width: 50%;
   padding-left: 12px;
-  position: absolute;
-  left: 0;
-  top: 300px;
   font-weight: bold;
-  color: #051e34;
+  color: #000411;
 }
 
 @media (min-width: 1200px) {
@@ -366,9 +373,8 @@ header .logo:hover::after {
   align-items: center;
   width: 35px;
   height: 35px;
-  overflow: hidden;
   border-radius: 50px;
-  border: 0.5px solid #051e34;
+  border: 0.5px solid #000411;
   cursor: pointer;
   transition: 0.5s all;
 }
@@ -380,15 +386,23 @@ header .logo:hover::after {
   }
 }
 
-.home-social li i {
+.home-social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #000411;
+}
+
+.home-social li a i {
   padding-left: 10px;
 }
 
-.home-social li > span {
+.home-social li a > span {
   display: flex;
 }
 
-.home-social li span:last-child {
+.home-social li a span:last-child {
   width: 0;
   font-size: var(--normal-font-size);
   padding: 5px;
@@ -396,39 +410,17 @@ header .logo:hover::after {
   visibility: hidden;
 }
 
-.home-social li:hover span:last-child {
+.home-social li:hover a span:last-child {
   width: 75px;
   visibility: visible;
 }
 
 .home-img {
-  width: 40%;
-  height: 510px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-@media (min-width: 1200px) {
-  .home-img {
-    height: 600px;
-    width: 47%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .home-img {
-    height: 550px;
-    width: 50%;
-  }
-}
-
-@media (max-width: 576px) {
-  .home-img {
-    height: 419px;
-  }
+  width: 50%;
 }
 
 .home-img img {
-  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -442,14 +434,8 @@ header .logo:hover::after {
   }
 
   .home-img {
-    margin-top: 140px;
+    margin-top: 30px;
     text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .home-img {
-    margin-top: 75px;
   }
 }
 
@@ -646,7 +632,7 @@ header .logo:hover::after {
   bottom: 0;
   width: 100%;
   height: 0;
-  background-color: rgba(5, 30, 52, 0.8);
+  background-color: rgba(0, 4, 17, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -695,106 +681,41 @@ header .logo:hover::after {
 
 /* =================== contact Section=================== */
 
-.contact-form {
+.contact-info {
+  margin: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .contact-form {
+  .contact-info {
     flex-direction: column;
   }
 }
 
-.contact-form form {
-  width: 50%;
+@media (max-width: 576px) {
+  .contact-info {
+    width: 100%;
+  }
+}
+
+.contact-info-list {
+  width: 60%;
+  font-size: var(--h2-font-size);
 }
 
 @media (max-width: 768px) {
-  .contact-form form {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-form form {
+  .contact-info-list {
     width: 90%;
   }
 }
 
-.contact-form form > h2 {
-  margin-bottom: 20px;
-}
-
-.form-field {
-  margin-bottom: 30px;
-}
-
-.form-field input,
-.form-field textarea {
-  display: block;
-  width: 100%;
-  color: #a9adb8;
-  padding: 12px 20px;
-  border: 1px solid #232935;
-  /* background-color: #101624; */
-  height: 52px;
-  border-radius: 7px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.form-field textarea {
-  height: 150px;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  outline: 0;
-  border: 1px solid var(--first-color);
-}
-
-.submit-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5em;
-  font-weight: 500;
-  padding: 12px 1.5em;
-  border-radius: 50px;
-  min-width: 170px;
-  border: none;
-  outline: none;
-  background-color: var(--first-color);
-  transition: all 0.4s ease;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-.submit-btn:hover {
-  background-color: #ffbf00c2;
-}
-
-.submit-btn:active {
-  position: relative;
-  top: 1px;
-}
-
-.contact-info {
-  width: 40%;
-  position: relative;
-}
-
 @media (max-width: 576px) {
-  .contact-info {
-    width: 90%;
+  .contact-info-list {
+    width: 100%;
   }
-}
-
-.contact-info-title {
-  margin-bottom: 20px;
 }
 
 .contact-info-list-item {
@@ -806,12 +727,12 @@ header .logo:hover::after {
 
 .contact-info-list-item-icon {
   padding: 10px;
-  border: 1px solid var(--first-color);
+  border: 3px solid var(--first-color);
   border-radius: 50%;
   margin-right: 20px;
-  width: 45px;
+  width: 50px;
+  height: 50px;
   font-size: var(--h2-font-size);
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -825,15 +746,32 @@ header .logo:hover::after {
   align-items: center;
   border-radius: 50px;
   height: 70px;
-  width: 100%;
-  position: unset;
-  margin-top: 30px;
+  width: 31%;
+}
+
+@media (max-width: 992px) {
+  .home-social.contact-social {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-social.contact-social {
+    margin-top: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-social.contact-social {
+    width: 85%;
+  }
 }
 
 .home-social.contact-social li {
   width: 50px;
   height: 50px;
-  font-size: var(--h2-font-size);
+  font-size: 30px;
 }
 
 .home-social li:hover {
@@ -862,7 +800,7 @@ ul {
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .section-title {

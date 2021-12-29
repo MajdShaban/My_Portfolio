@@ -192,8 +192,8 @@ let dark_on = localStorage.getItem("dark_on")
   ? JSON.parse(localStorage.getItem("dark_on"))
   : false;
 
-let dark = "#051e34";
-let light = "#f6f7f9";
+let dark = "#000411";
+let light = "#e1efe6";
 
 const setMode = (colorLight, colorDark, darkOn) => {
   document.documentElement.style.setProperty("--second-color", colorLight);
